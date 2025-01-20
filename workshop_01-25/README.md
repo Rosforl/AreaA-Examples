@@ -46,6 +46,8 @@ The workshop is based on practical sessions that will guide users through some t
 
 ## Training materials
 
+Slides available on [Zenodo](https://zenodo.org/records/14677026).
+
 A brief explanation for each file or link provided in this folder is provided below.
 
 Each python file is not meant to be a standalone script to execute, rather to contain a snippet of code, complemented with the necessary import statements, ready to be included into your own plugin package code. Three folders are available, namely __schema__ and __parser__ and __app__.
