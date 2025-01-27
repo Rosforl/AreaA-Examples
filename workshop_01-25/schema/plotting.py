@@ -145,7 +145,7 @@ class MyClassTwo(EntryData, ArchiveSection):
     )
 
 
-class MyClassThree(EntryData, ArchiveSection):
+class MyClassThree(PlotSection, EntryData):
     """
     An example class
     """
