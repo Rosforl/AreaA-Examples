@@ -19,6 +19,8 @@
 
 from typing import TYPE_CHECKING
 
+from nomad.datamodel.data import EntryData
+
 from nomad.datamodel.metainfo.annotations import (
     ELNAnnotation,
     Filter,
@@ -61,7 +63,15 @@ class MyCategory(EntryDataCategory):
     )
 
 
-class MyExampleClass(ArchiveSection):
+class HeaterTemperature(ArchiveSection):
+
+    test = Quantity(
+        type=str,
+        description="The name of the heater",
+    )
+    
+
+class MyExampleClass(EntryData, ArchiveSection):
     """
     A specialized section for IKZ based on the `UVVisNirTransmissionResult` section.
     """
